@@ -60,7 +60,7 @@ public class HarmonySearch{
         for (int i = 0; i < listOfCities.size(); i++) used[i] = false;
         for (int i = 0; i < listOfCities.size(); i++){
           double rant = Math.random();
-          int pos = (int)(rant * (memorySize)); // lấy gen từ cá thể ở vị trí pos
+          int pos = (int)(rant * (memorySize-1)); // lấy gen từ cá thể ở vị trí pos
           int num = memory.getMemory()[pos].getCity(i); 
           int times = 1;
           while (times < 10 && used[num] == true){
