@@ -65,6 +65,7 @@ public class HarmonySearch{
           int times = 1;
           while (times < 10 && used[num] == true){
             rant = Math.random();
+            pos = (int)(rant * (memorySize-1));
             num = memory.getMemory()[pos].getCity(i);
             times++;
           }
