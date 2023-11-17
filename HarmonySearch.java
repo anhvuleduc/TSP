@@ -63,7 +63,7 @@ public class HarmonySearch{
           int pos = (int)(rant * (memorySize)); // lấy gen từ cá thể ở vị trí pos
           int num = memory.getMemory()[pos].getCity(i); 
           int times = 1;
-          while (times < 10 && used[num] == false){
+          while (times < 10 && used[num] == true){
             rant = Math.random();
             num = memory.getMemory()[pos].getCity(i);
             times++;
